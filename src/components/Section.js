@@ -19,9 +19,9 @@ const Section =(props)=>{
                             {props.leftBtnTxt}
                         </LeftButton>
                         {props.rightBtnTxt &&
-                            <RightButton>                   
-                                {props.rightBtnTxt}
-                            </RightButton>
+                        <RightButton>                   
+                            {props.rightBtnTxt}
+                        </RightButton>
                         }
                     </ButtonGroup>
                 </Fade>
@@ -74,12 +74,22 @@ const LeftButton = styled.div`
     text-transform: uppercase;
     font-size: 12px;
     margin:8px;
+    &:hover{
+        background-color: rgb(96 96 96 / 80%);
+        color: #fff;
+    }
+
+
 `
 
 const RightButton = styled(LeftButton)`
     background-color:#fff;
     color: rgba(23,26,32,0.8);
     opacity: 0.65;
+    &:hover{
+        background-color:#ebebeb;
+        color: black;
+    }
 `
 
 const DownArrow = styled.img`

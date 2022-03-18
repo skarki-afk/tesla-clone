@@ -57,6 +57,9 @@ const Container = styled.div`
     @media (max-width: 500px) {
         margin: 0px;
       }
+    img{
+        cursor: pointer;
+    }
     `
 
 const Menu = styled.div`
